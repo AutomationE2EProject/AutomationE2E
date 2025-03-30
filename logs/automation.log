@@ -1,18 +1,18 @@
-2025-03-29 13:22:44 [main] INFO com.ui.listeners.TestListener Test Suite Started 
-2025-03-29 13:22:44 [main] INFO com.ui.test.LoginTest Load the home page of the website 
-2025-03-29 13:22:44 [main] INFO com.pages.HomePage lunching browser : CHROME 
-2025-03-29 13:22:53 [main] INFO com.pages.HomePage Entered URL of the application : http://www.automationpractice.pl/index.php 
-2025-03-29 13:22:53 [main] INFO com.ui.listeners.TestListener loginTest 
-2025-03-29 13:22:53 [main] INFO com.ui.listeners.TestListener verifies with the valid user able to login to the application 
-2025-03-29 13:22:53 [main] INFO com.ui.listeners.TestListener [e2e] 
-2025-03-29 13:22:54 [main] INFO com.pages.HomePage Clicked on Element  : By.xpath: //a[contains(text(),'Sign in')] 
-2025-03-29 13:22:54 [main] INFO com.pages.HomePage Clicked on SIGN_IN Button By.xpath: //a[contains(text(),'Sign in')] 
-2025-03-29 13:22:55 [main] INFO com.pages.LoginPage Entered Text  : test2March14@gmail.com Element Locator : By.xpath: //input[@id='email'] 
-2025-03-29 13:22:55 [main] INFO com.pages.LoginPage Entered Email : test2March14@gmail.com 
-2025-03-29 13:22:55 [main] INFO com.pages.LoginPage Entered Text  : test2 Element Locator : By.xpath: //input[@id='passwd'] 
-2025-03-29 13:22:55 [main] INFO com.pages.LoginPage Entered Password : test2 
-2025-03-29 13:22:56 [main] INFO com.pages.LoginPage Clicked on Element  : By.xpath: //button[@id='SubmitLogin'] 
-2025-03-29 13:22:56 [main] INFO com.pages.LoginPage Clicked on submit button By.xpath: //button[@id='SubmitLogin'] 
-2025-03-29 13:22:56 [main] INFO com.pages.MyAccountPage Get the text from element  : Test test 
-2025-03-29 13:22:56 [main] INFO com.ui.listeners.TestListener loginTest PASSED 
-2025-03-29 13:22:56 [main] INFO com.ui.listeners.TestListener Test Completed 
+2025-03-29 22:03:46 [main] INFO com.ui.listeners.TestListener Test Suite Started 
+2025-03-29 22:03:47 [main] INFO com.ui.test.LoginTest Load the home page of the website 
+2025-03-29 22:03:47 [main] INFO com.pages.HomePage lunching browser : CHROME 
+2025-03-29 22:03:58 [main] INFO com.pages.HomePage Entered URL of the application : http://www.automationpractice.pl/index.php 
+2025-03-29 22:03:58 [main] INFO com.ui.listeners.TestListener loginTest 
+2025-03-29 22:03:58 [main] INFO com.ui.listeners.TestListener verifies with the valid user able to login to the application 
+2025-03-29 22:03:58 [main] INFO com.ui.listeners.TestListener [e2e] 
+2025-03-29 22:03:59 [main] INFO com.pages.HomePage Clicked on Element  : By.xpath: //a[contains(text(),'Sign in')] 
+2025-03-29 22:03:59 [main] INFO com.pages.HomePage Clicked on SIGN_IN Button By.xpath: //a[contains(text(),'Sign in')] 
+2025-03-29 22:03:59 [main] INFO com.pages.LoginPage Entered Text  : test2March14@gmail.com Element Locator : By.xpath: //input[@id='email'] 
+2025-03-29 22:03:59 [main] INFO com.pages.LoginPage Entered Email : test2March14@gmail.com 
+2025-03-29 22:03:59 [main] INFO com.pages.LoginPage Entered Text  : test2 Element Locator : By.xpath: //input[@id='passwd'] 
+2025-03-29 22:03:59 [main] INFO com.pages.LoginPage Entered Password : test2 
+2025-03-29 22:04:00 [main] INFO com.pages.LoginPage Clicked on Element  : By.xpath: //button[@id='SubmitLogin'] 
+2025-03-29 22:04:00 [main] INFO com.pages.LoginPage Clicked on submit button By.xpath: //button[@id='SubmitLogin'] 
+2025-03-29 22:04:00 [main] INFO com.pages.MyAccountPage Get the text from element  : Test test 
+2025-03-29 22:04:00 [main] INFO com.ui.listeners.TestListener loginTest PASSED 
+2025-03-29 22:04:01 [main] INFO com.ui.listeners.TestListener Test Completed 

@@ -28,7 +28,7 @@ public class TestBase {
 	@BeforeMethod(description = "Load the home page for the website ")
 	void setUp(
 			@Optional("chrome") String browser, 
-			@Optional("true") boolean isLambdaTest, 
+			@Optional("false") boolean isLambdaTest, 
 			@Optional("true")boolean isHeadless, 
 			ITestResult result) throws IOException {
 //		 homePage = new HomePage(CHROME);
