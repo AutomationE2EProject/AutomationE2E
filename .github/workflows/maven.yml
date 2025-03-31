@@ -37,7 +37,7 @@ jobs:
       uses: actions/upload-artifact@v4.6.2
       with:
           name: Test Logs
-          path: Logs/ 
+          path: logs/ 
 
     - name: Upload Test Reports
       if: always()
