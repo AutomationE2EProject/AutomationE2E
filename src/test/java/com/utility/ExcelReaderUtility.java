@@ -20,7 +20,8 @@ public class ExcelReaderUtility {
 	public static Iterator<User> excelReader(String filename) {
 		// TODO Auto-generated method stub
 		
-		File excelFile = new File(System.getProperty("user.dir")+"\\testData\\"+filename);
+//		File excelFile = new File(System.getProperty("user.dir")+"\\testData\\"+filename);
+		File excelFile = new File("./testData/"+filename);
 		XSSFWorkbook xssfWorkBook;
 		XSSFSheet xssfSheet; 
 		List<User> userList = new ArrayList<User>();

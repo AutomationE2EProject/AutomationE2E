@@ -35,13 +35,13 @@ public class LoginTest extends TestBase {
 		assertEquals(homePage.clickOnSignButton().doLoginWith("test2March14@gmail.com","test2").getUserName(), "Test test");
 		}
 //	
-//	@Test(description = "verifies with the valid user able to login to the application",groups= {"e2e","smoke"},
-//			dataProviderClass = com.ui.dataproviders.LoginDataProvider.class,dataProvider = "LoginJSONDataProvider",
-//			retryAnalyzer = com.ui.listeners.MyRetryAnalyzer.class)
-//	public void loginJSONTest(User user) {
-////		assertEquals(homePage.clickOnSignButton().doLoginWith("test2March14@gmail.com","test2").getUserName(), "Test test");
-//		assertEquals(homePage.clickOnSignButton().doLoginWith(user.getEmailAddress(), user.getPassword()).getUserName(), "Test test");
-//	}
+	@Test(description = "verifies with the valid user able to login to the application",groups= {"e2e","smoke"},
+			dataProviderClass = com.ui.dataproviders.LoginDataProvider.class,dataProvider = "LoginJSONDataProvider",
+			retryAnalyzer = com.ui.listeners.MyRetryAnalyzer.class)
+	public void loginJSONTest(User user) {
+//		assertEquals(homePage.clickOnSignButton().doLoginWith("test2March14@gmail.com","test2").getUserName(), "Test test");
+		assertEquals(homePage.clickOnSignButton().doLoginWith(user.getEmailAddress(), user.getPassword()).getUserName(), "Test test");
+	}
 //	
 //	@Test(description = "verifies with the valid user able to login to the application",dataProviderClass = com.ui.dataproviders.LoginDataProvider.class,dataProvider = "LoginCSVDataProvider")
 //	public void loginCSVTest(User user) {

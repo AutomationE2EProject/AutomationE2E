@@ -16,7 +16,8 @@ public class CSVReaderUtility {
 
 	public static Iterator<User> csvReader() {
 		// TODO Auto-generated method stub
-		File file = new File(System.getProperty("user.dir")+"\\testData\\loginData.csv");
+//		File file = new File(System.getProperty("user.dir")+"\\testData\\loginData.csv");
+		File file = new File("./testData/loginData.csv");
 		FileReader fileReader;
 		CSVReader data;
 		List<User> userList = null;

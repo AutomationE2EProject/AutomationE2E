@@ -8,7 +8,8 @@ import java.util.Properties;
 
 public class PropertiesUtils {
 	public static String getPropertyValue(String key)   {
-		File file = new File(System.getProperty("user.dir")+"\\config\\QA.properties");
+//		File file = new File(System.getProperty("user.dir")+"\\config\\QA.properties");
+		File file = new File("./config/QA.properties");
 		FileReader fileReader;
 		Properties pro = null;
 		try {
