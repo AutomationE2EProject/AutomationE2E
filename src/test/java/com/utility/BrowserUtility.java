@@ -157,7 +157,8 @@ public abstract class BrowserUtility {
 				format.format(date);
 		TakesScreenshot screenShot = (TakesScreenshot)driver.get();
 		File screenShotData = screenShot.getScreenshotAs(OutputType.FILE);
-		String path = System.getProperty("user.dir")+"//screenshot//"+name+format+".png";
+//		String path = System.getProperty("user.dir")+"//screenshot//"+name+format+".png";
+		String path = "./screenshot/"+name+format+".png";
 		File screenShotFile = new File(path);
 		try {
 			FileUtils.copyFile(screenShotData, screenShotFile);

@@ -16,7 +16,8 @@ import com.uo.pojo.Environment;
 public class JSONUtils {
 	public static Environment getJSONValue(Env env)  {
 		Gson gson = new Gson();
-		File file = new File(System.getProperty("user.dir")+"\\config\\config.json");
+//		File file = new File(System.getProperty("user.dir")+"\\config\\config.json");
+		File file = new File("./config/config.json");
 		FileReader fileReader = null;
 		try {
 			fileReader = new FileReader(file);
