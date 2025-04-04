@@ -20,6 +20,7 @@ public class LoginPage extends BrowserUtility {
 	private static final By SUBMIT_BUTTON_LOCATOR = By.xpath("//button[@id='submitAccount']");
 	private static final By EMAIL_LOCATOR = By.xpath("//input[@id='email']");
 	private static final By SUBMIT_LOGIN_LOCATOR = By.xpath("//button[@id='SubmitLogin']");
+	private static final By ERROR_MESSAGE_LOCATOR = By.xpath("//p[contains(text(),'error')]/../ol/li");
 	Logger logger =  LoggerUtility.getLogger(this.getClass());
 
 	public LoginPage(WebDriver driver) {
@@ -40,5 +41,18 @@ public class LoginPage extends BrowserUtility {
 		return myAccountPage;
 	}
 	
+	public LoginPage doLoginWithInvalidCredentials(String email,String password) {
+		enterText(EMAIL_LOCATOR,email );
+		logger.info("Entered Email : "+email);
+		enterText(PASSWORD_LOCATOR, password);
+		logger.info("Entered Password : "+password);
+		clickOnElement(SUBMIT_LOGIN_LOCATOR);
+		logger.info("Clicked on submit button "+SUBMIT_LOGIN_LOCATOR);
+		LoginPage loginPage = new LoginPage(getDriver());
+		return loginPage;
+	}
 	
+	public String getErrorMessage(){
+		return getVisibleText(ERROR_MESSAGE_LOCATOR);
+	}
 }

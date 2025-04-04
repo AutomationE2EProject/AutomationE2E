@@ -29,7 +29,7 @@ public class TestBase {
 	void setUp(
 			@Optional("chrome") String browser, 
 			@Optional("false") boolean isLambdaTest, 
-			@Optional("true")boolean isHeadless, 
+			@Optional("false")boolean isHeadless, 
 			ITestResult result) throws IOException {
 //		 homePage = new HomePage(CHROME);
 //		 homePage = new HomePage(CHROME,true);

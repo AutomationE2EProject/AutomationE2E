@@ -7,7 +7,11 @@
   <parameter name="isLambdaTest" value="${isLambdaTest}"></parameter>
   <parameter name="isHeadless" value="${isHeadless}"></parameter>
     <classes>
+    <class name="com.ui.test.LoginTestInvalidCredentials"/>
       <class name="com.ui.test.LoginTest"/>
+      <class name="com.ui.test.MyAddressTest"/>
+      <class name="com.ui.test.SearchProductTest"/>
+      <class name="com.ui.test.ProductCheckOutTest"/>
     </classes>
   </test> <!-- Test <suite name="Suite" parallel="methods" thread-count="8">  -->
 </suite> <!-- Suite -->
