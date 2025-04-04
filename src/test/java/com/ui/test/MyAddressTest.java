@@ -39,7 +39,7 @@ public class MyAddressTest extends TestBase {
 	}
 
 	@Test(description = "MyAddress",groups= {"e2e"})
-	public void loginInvalideCredentialsTest() {
+	public void MyAddressTest() {
 		assertEquals(myAccountPage.goToMyAddressPage().saveAddress(addressPojo) , addressPojo.getAddressTitle().toUpperCase());
 //		assertTrue(homePage.clickOnSignButton().doLoginWith(EMAIL,PASSWORD).searchProdcut(SEARCH_TERM).getAllSearchProducts().contains("Printed Summer Dress"));
 		}

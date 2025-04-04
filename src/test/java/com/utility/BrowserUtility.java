@@ -232,10 +232,11 @@ public abstract class BrowserUtility {
 		Date date = new Date();
 				SimpleDateFormat format = new SimpleDateFormat("HH-mm-ss");
 				format.format(date);
+				String timestamp = format.format(date);
 		TakesScreenshot screenShot = (TakesScreenshot)driver.get();
 		File screenShotData = screenShot.getScreenshotAs(OutputType.FILE);
 //		String path = System.getProperty("user.dir")+"//screenshot//"+name+format+".png";
-		String path = "./screenshot/"+name+format+".png";
+		String path = "./screenshot/"+name+" - "+timestamp+".png";
 		File screenShotFile = new File(path);
 		try {
 			FileUtils.copyFile(screenShotData, screenShotFile);

@@ -34,7 +34,7 @@ public class SearchProductTest extends TestBase {
 	 
 
 	@Test(description = "Search for Product",groups= {"e2e"})
-	public void loginInvalideCredentialsTest() {
+	public void searchProductTest() {
 		
 		assertEquals(homePage.clickOnSignButton().doLoginWith(EMAIL,PASSWORD).searchProdcut(SEARCH_TERM).isSearchTermPresentInProductList(SEARCH_TERM) , true);
 //		assertTrue(homePage.clickOnSignButton().doLoginWith(EMAIL,PASSWORD).searchProdcut(SEARCH_TERM).getAllSearchProducts().contains("Printed Summer Dress"));
