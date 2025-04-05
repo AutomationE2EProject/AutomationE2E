@@ -63,7 +63,7 @@ Before running this framework, ensure the following software is installed on you
 ```bash
   git clone https://github.com/AutomationE2EProject/AutomationE2E.git
 
-  cd Test-Automation-Framework
+  cd AutomationE2E
 ```
     
 
